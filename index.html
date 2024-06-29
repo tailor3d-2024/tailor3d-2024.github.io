@@ -300,14 +300,14 @@
                     </h1>
                     <p class="text-justify px-5">
                         <h3 style="font-size: 18px; font-weight: normal;">
-
-                        Recent advances in 3D AIGC show promise for creating 3D objects directly from text and images, cutting costs in animation and product design. However, detailed customization of 3D assets remains challenging compared to their 2D counterparts. 
-                        To address this, we propose Tailor3D, a novel pipeline creating customized 3D assets from editable dual-side images and feed-forward reconstruction methods. This approach mimics a tailor's local object changes and style transfers:
-                        <b>1)</b> Use 2D image editing methods to edit the front-view image. The front-view image can be provided or generated from text.
-                        <b>1)</b> Use 2D image editing methods to edit the front-view image. The front-view image can be provided or generated from text.
-                        Experimental results show Tailor3D's effectiveness in 3D generative fill and style transfer, providing an efficient solution for 3D asset editing. 
-                        
-                    </h3>
+                            Recent advances in 3D AIGC show promise for creating 3D objects directly from text and images, cutting costs in animation and product design. However, detailed customization of 3D assets remains challenging compared to their 2D counterparts.<br><br>
+                            To address this, we propose Tailor3D, a novel pipeline creating customized 3D assets from editable dual-side images and feed-forward reconstruction methods. This approach mimics a tailor's local object changes and style transfers:<br><br>
+                            <b>1)</b> Use 2D image editing methods to edit the front-view image. The front-view image can be provided or generated from text.<br><br>
+                            <b>2)</b> Use multi-view diffusion techniques (e.g., Zero-1-to-3) to generate the back view of the object.<br><br>
+                            <b>3)</b> Use 2D image editing methods to edit the back-view image.<br><br>
+                            <b>4)</b> Use our proposed Dual-sided LRM (large reconstruction model) to seamlessly combine the front and back images and get the customized 3D asset.<br><br>
+                            Each step takes only a few seconds, allowing users to interactively obtain the 3D objects they desire. Experimental results show Tailor3D's effectiveness in 3D generative fill and style transfer, providing an efficient solution for 3D asset editing.
+                        </h3>
 
                     </p>
                 </div>
